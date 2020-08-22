@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import Combine
 import SwiftUI
+import Combine
 
-class ApiServices: ObservableObject {
+class ApiService: ObservableObject {
     let objectWillChange = ObservableObjectPublisher()
     
     @Published var datatotal = [Total]() {
@@ -19,8 +19,10 @@ class ApiServices: ObservableObject {
         }
     }
     
-
-    init(){
+    @Published var isLoading = true
+    
+    
+    init() {
         guard let url = URL(string: "https://data.covid19.go.id/public/api/update.json") else {
             fatalError("INVALID URL")
         }
@@ -33,9 +35,9 @@ class ApiServices: ObservableObject {
             let result = try? JSONDecoder().decode(CovidResponse.self, from: data)
             
             if let result = result {
+                self.isLoading = false
                 DispatchQueue.main.async {
                     self.datatotal = [result.update.total]
-                    
                 }
             }
         }.resume()

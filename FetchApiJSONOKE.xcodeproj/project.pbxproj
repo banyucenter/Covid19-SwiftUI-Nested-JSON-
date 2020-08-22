@@ -13,8 +13,8 @@
 		2835DC3C24EFA033005C725C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2835DC3B24EFA033005C725C /* Assets.xcassets */; };
 		2835DC3F24EFA033005C725C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2835DC3E24EFA033005C725C /* Preview Assets.xcassets */; };
 		2835DC4224EFA033005C725C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2835DC4024EFA033005C725C /* LaunchScreen.storyboard */; };
-		2835DC5024EFBAA4005C725C /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835DC4F24EFBAA4005C725C /* Covid.swift */; };
-		2835DC5224EFBCD5005C725C /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835DC5124EFBCD5005C725C /* ApiServices.swift */; };
+		2835DC5C24F013D1005C725C /* Covid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835DC5B24F013D1005C725C /* Covid.swift */; };
+		2835DC5E24F01499005C725C /* ApiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835DC5D24F01499005C725C /* ApiServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		2835DC3E24EFA033005C725C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2835DC4124EFA033005C725C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2835DC4324EFA033005C725C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2835DC4F24EFBAA4005C725C /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
-		2835DC5124EFBCD5005C725C /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
+		2835DC5B24F013D1005C725C /* Covid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid.swift; sourceTree = "<group>"; };
+		2835DC5D24F01499005C725C /* ApiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 		2835DC3424EFA031005C725C /* FetchApiJSONOKE */ = {
 			isa = PBXGroup;
 			children = (
-				2835DC4A24EFA0EB005C725C /* WebServices */,
-				2835DC4924EFA0E6005C725C /* Model */,
+				2835DC5A24F013BE005C725C /* Web Service */,
+				2835DC5924F013BA005C725C /* Model */,
 				2835DC3524EFA031005C725C /* AppDelegate.swift */,
 				2835DC3724EFA031005C725C /* SceneDelegate.swift */,
 				2835DC3924EFA031005C725C /* ContentView.swift */,
@@ -81,20 +81,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2835DC4924EFA0E6005C725C /* Model */ = {
+		2835DC5924F013BA005C725C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2835DC4F24EFBAA4005C725C /* Covid.swift */,
+				2835DC5B24F013D1005C725C /* Covid.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2835DC4A24EFA0EB005C725C /* WebServices */ = {
+		2835DC5A24F013BE005C725C /* Web Service */ = {
 			isa = PBXGroup;
 			children = (
-				2835DC5124EFBCD5005C725C /* ApiServices.swift */,
+				2835DC5D24F01499005C725C /* ApiServices.swift */,
 			);
-			path = WebServices;
+			path = "Web Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +171,8 @@
 				2835DC3624EFA031005C725C /* AppDelegate.swift in Sources */,
 				2835DC3824EFA031005C725C /* SceneDelegate.swift in Sources */,
 				2835DC3A24EFA031005C725C /* ContentView.swift in Sources */,
-				2835DC5024EFBAA4005C725C /* Covid.swift in Sources */,
-				2835DC5224EFBCD5005C725C /* ApiServices.swift in Sources */,
+				2835DC5C24F013D1005C725C /* Covid.swift in Sources */,
+				2835DC5E24F01499005C725C /* ApiServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
